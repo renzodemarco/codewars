@@ -11,7 +11,7 @@ const myFriends1 = (friends) => {
 } 
 
 
-//Alternative:
+//Alternative Solution:
 
 const myFriends2 = (friends) =>{
     let myFriends = []
@@ -22,9 +22,3 @@ const myFriends2 = (friends) =>{
     }
     return myFriends;
 }
-
-let friends = ["Renzo", "Ryan", "Raul", "Diego", "Tomas", "Amor"];
-
-console.log(myFriends1(friends));
-
-console.log(myFriends2(friends));
