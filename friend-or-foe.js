@@ -16,7 +16,7 @@ const myFriends1 = (friends) => {
 const myFriends2 = (friends) =>{
     let myFriends = []
     for (i = 0; i < friends.length; i++) {
-        if (friends[i].length == 4) {
+        if (friends[i].length === 4) {
         myFriends.push(friends[i])
         }
     }
