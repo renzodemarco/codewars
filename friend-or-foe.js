@@ -6,14 +6,14 @@
 
 //My Solution: 
 
-const myFriends1 = (friends) => {
+function myFriends1(friends) {
     return friends.filter(n => n.length === 4)
 } 
 
 
 //Alternative Solution:
 
-const myFriends2 = (friends) =>{
+function myFriends2 (friends) {
     let myFriends = []
     for (i = 0; i < friends.length; i++) {
         if (friends[i].length === 4) {

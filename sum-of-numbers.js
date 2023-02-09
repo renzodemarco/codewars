@@ -2,7 +2,7 @@
 
 //My Solution:
 
-const getSum = (a, b) => {
+function getSum(a, b) {
     let result = 0;
     let min = Math.min(a, b);
     let max = Math.max(a, b);
