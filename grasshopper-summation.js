@@ -2,7 +2,7 @@
 
 // My Solution:
 
-var summation = function (num) {
+const summation = num => {
     let res = 0;
     for (i = 1; i <= num; i++) {
         res += i;
