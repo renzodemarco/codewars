@@ -3,14 +3,6 @@
 // My Solution:
 
 function duplicateEncode(word) {
-    const letters = []
-    const duplicatedLetters = []
-    word.split('').forEach(i => {
-        const letter = i.toLowerCase()
-        if (letters.includes(letter) && !duplicatedLetters.includes(letter)) {
-            duplicatedLetters.push(letter)
-        }
-        else if (!letters.includes(letter)) letters.push(letter)
-    })
-    return word.split('').map(letter => duplicatedLetters.includes(letter.toLowerCase()) ? ")" : "(" ).join('')
+    const arr = word.toLowerCase().split('');
+    return arr.map(letter => arr.findIndex(l => l == letter) === arr.findLastIndex(l => l == letter) ? '(' : ')').join('')
 }
