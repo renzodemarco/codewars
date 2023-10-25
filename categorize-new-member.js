@@ -9,5 +9,9 @@
 // My Solution:
 
 function openOrSenior(data) {
-    // ...
+    const response = []
+    for (let i = 0; i < data.length; i++) {
+        data[i][0] > 54 && data[i][1] > 6 ? response.push('Senior') : response.push('Open')
+    }
+    return response
 }
