@@ -5,5 +5,5 @@
 function findOutlier(integers) {
     const even = integers.filter(n => n % 2 === 0)
     const odd = integers.filter(n => n % 2 !== 0)
-    return even.length === 1 ? even[0] : odd[0]
+    return even.length === 1 ? even : odd[0]
 }
