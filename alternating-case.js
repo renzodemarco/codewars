@@ -9,5 +9,5 @@ String.prototype.toAlternatingCase = function () {
             result += this[i].toLowerCase();
         } else result += this[i].toUpperCase();
     }
-    return result;
+    return result
 }
