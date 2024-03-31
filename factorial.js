@@ -4,3 +4,11 @@
 
 // My Solution:
 
+function factorial(n) {
+  if (n < 0 || n > 12) throw new RangeError()
+  let res = n === 0 ? 1 : n
+  for (i = 1; i < n; i++) {
+    res *= i
+  }
+  return res
+}
