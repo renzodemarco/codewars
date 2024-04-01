@@ -1,9 +1,9 @@
-// Define String.prototype.toAlternatingCase such that each lowercase letter becomes uppercase and each uppercase letter becomes lowercase. 
+// Define String.prototype.toAlternatingCase such that each lowercase letter becomes uppercase and each uppercase letter becomes lowercase.  
 
 // My Solution:  
 
 String.prototype.toAlternatingCase = function () {
-    let result = "";
+    let result = '';
     for (i = 0; i < this.length; i++) {
         if (this[i] == this[i].toUpperCase()) {
             result += this[i].toLowerCase();
