@@ -3,3 +3,11 @@
 // The passed in string will only consist of alphabetical characters and spaces(' '). Spaces will only be present if there are multiple words. Words will be separated by a single space(' ').
 
 // My Solution:
+
+function toWeirdCase(string) {
+  return string.split(' ').map(word => {
+    return word.split('').map((letter, index) => {
+      return index % 2 === 0 ? letter.toUpperCase() : letter.toLowerCase()
+    }).join('')
+  }).join(' ')
+}
