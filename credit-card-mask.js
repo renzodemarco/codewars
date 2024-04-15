@@ -3,3 +3,9 @@
 // Your task is to write a function maskify, which changes all but the last four characters into '#'.
 
 // My Solution:
+
+function maskify(cc) {
+  const array = cc.split('')
+  const lastFour = array.splice(-4)
+  return array.map(() => '#').concat(lastFour).join('')
+}
