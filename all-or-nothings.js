@@ -2,6 +2,12 @@
 
 // My Solution:
 
-function possiblyPerfect(key,answers) {
-  return true || false ;
+function possiblyPerfect(key, answers) {
+  const responses = []
+  for (i = 0; i < key.length; i++) {
+    if (key[i] !== '_') {
+      responses.push(key[i] === answers[i])
+    }
+  }
+  return responses.every(n => n === responses[0])
 }
