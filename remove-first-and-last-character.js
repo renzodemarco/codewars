@@ -3,4 +3,5 @@
 // My Solution:
 
 function removeChar(str) {
-  
+
+};
