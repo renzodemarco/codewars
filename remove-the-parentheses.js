@@ -6,11 +6,11 @@
 
 function removeParentheses(s){
   let parentheses = 0
-  let res = []
+  let res = ''
   for (i = 0; i < s.length; i++) {
     if (s[i] === '(') parentheses++
-    if (!parentheses) res.push(s[i])
+    if (!parentheses) res += s[i]
     if (s[i] === ')') parentheses--
   }
-  return res.join('')
+  return res
 }
