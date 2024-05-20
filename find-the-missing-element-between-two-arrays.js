@@ -5,6 +5,7 @@
 // My Solution:
 
 function findMissing(arr1, arr2) {
-  // Your solution here
-  return 0
+  const sumArr1 = arr1.reduce((acc, num) => acc + num, 0)
+  const sumArr2 = arr2.reduce((acc, num) => acc + num, 0)
+  return sumArr1 - sumArr2
 }
