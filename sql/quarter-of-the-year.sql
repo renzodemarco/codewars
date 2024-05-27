@@ -4,4 +4,4 @@
 
 -- My Solution:
 
-SELECT month, (month - 1) / 3 + 1 AS res FROM quarterof
+SELECT month, (month - 1) / 3 + 1 AS res FROM quarterof;

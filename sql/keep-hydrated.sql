@@ -4,4 +4,4 @@
 
 -- My Solution:
 
-SELECT id, hours, FLOOR(hours * .5) AS liters FROM cycling
+SELECT id, hours, FLOOR(hours * .5) AS liters FROM cycling;
