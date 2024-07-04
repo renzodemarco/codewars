@@ -2,3 +2,6 @@
 
 // My Solution:
 
+const stringToNumber = function(str){
+  return parseInt(str)
+}
