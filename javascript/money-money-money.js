@@ -10,15 +10,11 @@ function calculateYears(principal, interest, tax, desired) {
   let years = 0
   let money = principal
 
-  if (money >= desired) {
-    return years;
-  }
-
-  do {
+  while (money < desired) {
     const accruedInterest = money * interest
     const taxedInterest = accruedInterest * (1 - tax)
     money += taxedInterest
     years++
-  } while (money < desired)
+  } 
   return years
 }
