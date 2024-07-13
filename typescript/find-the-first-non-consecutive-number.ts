@@ -7,3 +7,10 @@
 // If the whole array is consecutive then return null2.
 
 // My Solution:
+
+export function firstNonConsecutive (arr: number[]) : null | number {
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] !== arr[i - 1] + 1) return arr[i]
+  }
+  return null
+}
