@@ -11,3 +11,15 @@
 
 // My Solution:
 
+export function multiplicationTable(size: number): number[][] {
+  const response: number[][] = []
+  const array: number[] = []
+  for (let i = 1; i <= size; i++) {
+    array.push(i)
+  }
+  for (let i = 1; i <= size; i++) {
+    const arr = array.map(n => n * i)
+    response.push(arr)
+  }
+  return response
+}
