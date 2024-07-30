@@ -5,3 +5,18 @@
 // All input strings will be nonempty, and will only consist of parentheses, brackets and curly braces: ()[]{}.
 
 // My Solution:
+
+export function validBraces(braces: string): boolean {
+  const open: string[] = ["{", "[", "("]
+  const close: string[] = ["}", "]", ")"]
+  const stack: string[] = []
+  braces.split('').forEach(char => {
+    if (open.includes(char)) stack.push(char)
+    const openIndex = open.indexOf(stack[stack.length - 1])
+    const closeIndex = close.indexOf(char)
+    if (closeIndex !== -1) {
+      openIndex === closeIndex ? stack.pop() : stack.push(char)
+    }
+  })
+  return stack.length === 0
+}
