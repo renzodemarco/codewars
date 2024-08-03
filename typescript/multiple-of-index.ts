@@ -3,9 +3,5 @@
 // My Solution:
 
 export function multipleOfIndex(array: number[]): number[] {
-  const res: number[] = []
-  array.forEach((num, i) => {
-    if (num % i === 0 || num === 0) res.push(num)
-  })
-  return res
+  return array.filter((num, i) => num % i === 0 || !num)
 }
