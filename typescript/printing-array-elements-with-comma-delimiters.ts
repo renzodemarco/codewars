@@ -4,6 +4,6 @@
 
 // My Solution:
 
-export function printArray(array: number[]): string {
-  return array.join(',')
+export function printArray(arr: any[]){
+  return arr.join();
 }
