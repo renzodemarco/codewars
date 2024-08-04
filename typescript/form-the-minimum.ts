@@ -3,6 +3,5 @@
 // My Solution:
 
 export function minValue(values: number[]): number {
-  const numbers = Array.from(new Set(values));
-  return parseInt(numbers.sort().join(''))
+  return parseInt(values.filter((num, index) => values.indexOf(num) === index).sort().join(''))
 }
