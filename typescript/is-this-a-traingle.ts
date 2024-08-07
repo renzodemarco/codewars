@@ -3,5 +3,5 @@
 // My Solution:
 
 export function isTriangle(a: number, b: number, c: number): boolean {
-  return (a + b > c && b + c > a && c + a > b)
+  return a + b > c && b + c > a && c + a > b
 }
