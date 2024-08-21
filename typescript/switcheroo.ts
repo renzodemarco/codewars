@@ -7,3 +7,8 @@
 
 // My Solution:
 
+export function switcheroo(x: string): string {
+  return x.split('').map(l => {
+    return l === 'a' ? 'b' : l === 'b' ? 'a' : l
+  }).join('')
+}
