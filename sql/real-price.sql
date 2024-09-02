@@ -16,6 +16,7 @@
 -- weight (float)
 -- producer (string)
 -- country (string)
+
 -- Results table schema:
 -- name (string)
 -- weight (float)
@@ -23,3 +24,13 @@
 -- price_per_kg (float)
 
 -- My Solution:
+
+SELECT 
+  name, 
+  weight, 
+  price, 
+  ROUND(((price / weight) * 1000)::numeric, 2) AS price_per_kg 
+FROM Products
+ORDER BY 
+    price_per_kg ASC, 
+    name ASC;
