@@ -5,10 +5,16 @@
 // My Solution:
 
 const binaryArrayToNumber = arr => {
-  const reversedArr = arr.reverse();
+  arr.reverse();
   let res = 0;
   for (i = 0; i < arr.length; i++) {
-    res += reversedArr[i] * 2 ** i;
+    res += arr[i] * 2 ** i;
   }
   return res;
 };
+
+// Alternative Solution:
+
+const binaryArrayToNumber2 = arr => {
+  return parseInt(arr.join(''), 2)
+}
