@@ -7,5 +7,5 @@
 function isPangram(string){
   return 'abcdefghijklmnopqrstuvwxyz'
     .split('')
-    .every(letter => string.toLowerCase().includes(letter));
+    .every(letter => string.toLowerCase().includes(letter))
 }

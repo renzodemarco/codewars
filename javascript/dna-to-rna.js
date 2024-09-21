@@ -7,5 +7,5 @@
 // My Solution:
 
 function DNAtoRNA(dna) {
-  return dna.split('').map(n => n == 'T' ? 'U' : n).join('')
+  return dna.split('').map(n => n == 'T' ? 'U' : n).join('');
 }
