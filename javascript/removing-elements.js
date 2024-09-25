@@ -3,5 +3,5 @@
 // My Solution:
 
 function removeEveryOther(arr) {
-  return arr.filter((el, i) => i % 2 === 0)
+  return arr.filter((_, i) => i % 2 === 0)
 }
