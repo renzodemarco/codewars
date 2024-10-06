@@ -5,6 +5,13 @@
 // My Solution:
 
 export function findMultiples(integer: number, limit: number): number[] {
-  const res: number[] = [integer]
-  
+  const res: number[] = [];
+  let multiple = integer;
+
+  while (multiple <= limit) {
+    res.push(multiple);
+    multiple += integer;
+  }
+
+  return res;
 }
