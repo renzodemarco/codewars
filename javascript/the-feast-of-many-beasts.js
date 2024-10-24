@@ -7,5 +7,5 @@
 // My Solution:
 
 function feast(beast, dish) {
-  return beast[0] === dish[0] && beast.endsWith(dish[dish.length - 1])
+  return beast.startsWith(dish[0]) && beast.endsWith(dish[dish.length - 1])
 }
