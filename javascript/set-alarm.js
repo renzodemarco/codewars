@@ -2,6 +2,8 @@
 
 // The function should return true if you are employed and not on vacation (because these are the circumstances under which you need to set an alarm). It should return false otherwise.
 
+// https://www.codewars.com/kata/568dcc3c7f12767a62000038/train/javascript
+
 // My Solution:
 
 function setAlarm(employed, vacation){
