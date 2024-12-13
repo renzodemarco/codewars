@@ -5,7 +5,12 @@ function isValidWalk(walk) {
   let vertical = 0
   let horizontal = 0
   for (i = 0; i < walk.length; i++) {
-    walk[i] === 'n' ? vertical++ : walk[i] === 's' ? vertical-- : walk[i] === 'e' ? horizontal++ : horizontal--
+    switch (walk[i]) {
+      case 'n': vertical++
+      case 's': vertical--
+      case 'e': horizontal++
+      case 'w': horizontal--
+    }
   }
   return vertical === 0 && horizontal === 0
 }
