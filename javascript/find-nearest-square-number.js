@@ -6,9 +6,6 @@
 
 // My Solution:
 
-function nearestSq(n) {
-  const root = Math.sqrt(n)
-  const bigger = Math.ceil(root)
-  const smaller = Math.floor(root)
-  return Math.abs(Math.pow(bigger, 2) - n) < Math.abs(Math.pow(smaller, 2) - n) ? Math.pow(bigger, 2) : Math.pow(smaller, 2)
+function nearestSq(n){
+  return Math.pow(Math.round(Math.sqrt(n)), 2)
 }
