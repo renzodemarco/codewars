@@ -6,6 +6,8 @@
 // First argument (required): the original string to be converted.
 // Second argument (optional): space-delimited list of minor words that must always be lowercase except for the first word in the string. The tests will pass undefined when this argument is unused.
 
+// My Solution:
+
 function capitalize(word) {
   if (!word) return ''
   return word[0].toUpperCase() + word.slice(1).toLowerCase()
