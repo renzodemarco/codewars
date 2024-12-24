@@ -7,15 +7,9 @@
 // My Solution:
 
 function twoSum(numbers, target) {
-  let res = []
   for (i = 0; i < numbers.length; i++) {
     for (j = 0; j < numbers.length; j++) {
-      if (numbers[i] + numbers[j] === target && i !== j) {
-        res.push(i)
-        res.push(j)
-        break
-      }
+      if (numbers[i] + numbers[j] === target && i !== j) return [i, j]
     }
   }
-  return res
 }
