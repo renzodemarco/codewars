@@ -3,5 +3,5 @@
 // My Solution:
 
 function sumDigits(number) {
-  return number.toString().split('').reduce((a, b) => parseInt(a) + parseInt(b), 0)
+  return Math.abs(number).toString().split('').map(Number).reduce((a, b) => a + b, 0)
 }
