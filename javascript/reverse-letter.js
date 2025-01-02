@@ -1,4 +1,4 @@
-// Given a string str, reverse it and omit all non-alphabetic characters.
+// Given a lower case string str, reverse it and omit all non-alphabetic characters.
 
 // For str = "krishan", the output should be "nahsirk".
 
@@ -10,7 +10,7 @@ function reverseLetter(str) {
   return str.split('')
             .filter(l => {
               const letter = l.charCodeAt(0)
-              return letter > 64 && letter < 123
+              return letter > 96 && letter < 123
             })
             .reverse()
             .join('')  
