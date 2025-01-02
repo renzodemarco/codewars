@@ -7,8 +7,7 @@
 function count(string) {
   let res = {}
   for (i = 0; i < string.length; i++) {
-    if (!res[string[i]]) res[string[i]] = 1
-    else res[string[i]]++ 
+    res[string[i]] ? res[string[i]]++ : res[string[i]] = 1
   }
   return res
 }
