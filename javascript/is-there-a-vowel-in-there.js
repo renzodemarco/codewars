@@ -4,11 +4,9 @@
 
 // Return the resulting array.
 
-// ! My Solution:
+// My Solution:
 
 function isVow(a) {
-  const vowels = ['a', 'e', 'i', 'o', 'u']
-  for (i = 0; i < a.length; i++) {
-    if vowels.includes(a[i].toLowerCase()) 
-  }
+  const vowels = { 97: 'a', 101: 'e', 105: 'i', 111: 'o', 117: 'u' };
+  return a.map(n => vowels[n] || n);
 }
