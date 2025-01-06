@@ -15,15 +15,9 @@
 // My Solution:
 
 function sumTriangularNumbers(n) {
-  let count = 0
-  let arr = []
+  let res = 0
   for (i = 1; i <= n; i++) {
-    const numbers = []
-    for (j = 0; j < i; i++) {
-      count += 1
-      numbers.push(count)
-    }
-    arr.push(numbers[numbers.length - 1])
+    res += (i * (i + 1)) / 2
   }
-  return arr.reduce((a, b) => a + b, 0)
+  return res
 }
