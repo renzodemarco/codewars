@@ -2,6 +2,9 @@
 
 // If no arguments are given, ball objects should instantiate with a "ball type" of "regular."
 
-function Ball(ballType) {
-  // ! your code goes here
+class Ball {
+  constructor(type = "regular") {
+    this.balltype = type 
+    return this
+  }
 }
