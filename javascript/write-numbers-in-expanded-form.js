@@ -7,5 +7,13 @@
 // NOTE: All numbers will be whole numbers greater than 0.
 
 function expandedForm(num) {
-  // ! Your code here
+  const numArray = num.toString().split('')
+  const res = numArray.map((n, i) => {
+    if (n === '0') return false
+    for (j = numArray.length - 1; j > i; j--) {
+      n += '0'
+    }
+    return n
+  }).filter(Boolean)
+  return res.join(' + ')
 }
