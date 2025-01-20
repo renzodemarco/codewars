@@ -9,5 +9,5 @@
 // My Solution:
 
 function toNumberArray(array) {
-  return array.map(n => Number(n))
+  return array.map(Number)
 }
