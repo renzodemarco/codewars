@@ -3,6 +3,6 @@
 // My Solution:
 
 function gooseFilter (birds) {
-  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
   return birds.filter(w => !geese.includes(w))
 };
