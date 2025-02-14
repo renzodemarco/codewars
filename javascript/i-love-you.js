@@ -14,8 +14,20 @@
 
 // My Solution:
 
-// https://www.codewars.com/kata/57f24e6a18e9fad8eb000296/train/javascript
-
 function howMuchILoveYou(nbPetals) {
-  // your code
+  const rest = nbPetals % 6;
+  switch (rest) {
+    case 0:
+      return "not at all";
+    case 1:
+      return "I love you";
+    case 2:
+      return "a little";
+    case 3:
+      return "a lot";
+    case 4:
+      return "passionately";
+    case 5:
+      return "madly";
+  }
 }
