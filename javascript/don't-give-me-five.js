@@ -5,7 +5,7 @@
 function dontGiveMeFive(start, end) {
   let count = []
   for (i = start; i <= end; i++) {
-    if (!i.toString().split('').includes('5')) count.push(i)
+    if (!i.toString().includes('5')) count.push(i)
   }
   return count.length
 }
