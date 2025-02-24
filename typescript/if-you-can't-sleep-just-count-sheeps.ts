@@ -3,9 +3,9 @@
 // My Solution:
 
 export function countSheep(n: number): string {
-  let res: string = ""
+  let res: string = "";
   for (let i = 1; i <= n; i++) {
-    res += `${i} sheep...`
+    res += `${i} sheep...`;
   }
-  return res
+  return res;
 }
