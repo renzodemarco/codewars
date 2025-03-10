@@ -12,7 +12,10 @@ public static class AgeDiff
   public static string CalculateAge(int birth, int yearTo)
   {
     int diff = yearTo - birth;
-    return diff > 0 ? $"You are {diff} year(s) old." : diff == 0 ? "You were born this very year!" : $"You will be born in {Math.Abs(diff)} year(s).";
-
+    return diff > 1 ? $"You are {diff} years old."
+    : diff == 1 ? $"You are 1 year old."
+    : diff == 0 ? "You were born this very year!"
+    : diff == -1 ? "You will be born in 1 year."
+    : $"You will be born in {Math.Abs(diff)} years.";
   }
 }
