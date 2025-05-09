@@ -6,7 +6,7 @@
 
 // "found the needle at position " plus the index it found the needle
 
-// My Solution:
+// My Solution
 
 function findNeedle(haystack) {
   return `found the needle at position ${haystack.indexOf('needle')}`
